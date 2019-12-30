@@ -7,5 +7,6 @@ public class CustomFilesException extends Exception {
 
     public CustomFilesException(String msg) {
         super(msg);
+        System.out.println("CustomFilesException with String arg constructor invoked");
     }
 }

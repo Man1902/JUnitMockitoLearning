@@ -3,6 +3,7 @@ package com.learning.powermockito;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.mockito.InjectMocks;
 import org.mockito.Mockito;
 import org.mockito.Spy;
 import org.powermock.api.mockito.PowerMockito;
@@ -18,6 +19,7 @@ import java.nio.file.Path;
 
 public class StaticMethodInvocationServiceTest {
     @Spy
+    @InjectMocks
     private StaticMethodInvocationService staticMethodInvocationService = new StaticMethodInvocationService();
 
     // 1) test void static method invocation
